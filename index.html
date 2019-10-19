@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Chitkara University</title>
+<style>
+  .glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+      blink {
+        animation: blinker 0.6s linear infinite;
+        color: yellow;
+          
+       }
+      @keyframes blinker {  
+        50% { opacity: 0; }
+       }
+    
+* {
+  box-sizing: border-box;
+}
+
+
+    body {
+  /* Location of the image */
+    background-image: url('https://i.ebayimg.com/images/g/JVIAAOSwouJbUH9X/s-l300.jpg');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+        
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+.bg-text {
+  color: white;
+     margin: auto;
+  font-weight: bold;
+
+  position: absolute;
+  top: 50%;
+   
+height: 70%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+  width: 50%;
+  padding: 20px;
+ text-align: center;
+}
+    img {
+  
+    width: 50%; 
+    height: 70%;
+        display: block;
+margin-left: auto;
+margin-right: auto;
+        
+}
+
+@media (max-width: 1000px) {
+  img {
+    width: auto; 
+      height: auto;
+  }
+}
+   
+   
+
+</style>
+
+</head>
+<body background=""><div class="bg-image"></div>
+<div class="bg-text">
+<font color="red"><font size="20"><marquee>Welcome To Chitkara</marquee><br/></font>
+<img src="https://media.glassdoor.com/sqll/518907/chitkara-university-squarelogo-1465211211827.png" usemap="#chitkara" border = "3"  align="bottom"/><br>
+    <blink class="glow"> Click on Chitkara University image for login page</blink>
+<map name="chitkara">
+<area href="chitkara2.html" shape="rectangle" coords="0,0,390,340">
+</body>
+</html>
+
+
+
+
+
+ 
+
+
+
+
+
+

